@@ -40,6 +40,7 @@ export default {
 
 <template>
         <!-- <MainSearch /> -->
+        
         <MainCardsList :cards="cards"/>
 </template>
 
