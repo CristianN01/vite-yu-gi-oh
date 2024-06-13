@@ -35,7 +35,7 @@ export default {
     <div class="dropdown">
         <button class="dropbtn">selectType</button>
         <div class="dropdown-content">
-            <a v-for="type in typeCard" :key="type.archetype_name" @click="$emit('clickType', typeCard)"> {{ type.archetype_name }}</a>
+            <a v-for="type in typeCard" :key="type.archetype_name" @click="$emit('clickType', type.archetype_name)"> {{ type.archetype_name }}</a>
         </div>
     </div>
 </template>

@@ -32,7 +32,20 @@ export default {
         });
     },
     archetype(archetypeCard){
-        console.log(archetypeCard.length)
+        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=1000&archetype=archetypeCard')
+        .then( (response) => {
+            // handle success
+            // console.log(response.data.data);
+            this.cards = response.archetypeCard;
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .finally(function () {
+            // always executed
+        });
+        
     }
   },
   created(){
