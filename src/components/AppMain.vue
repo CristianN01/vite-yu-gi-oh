@@ -32,7 +32,7 @@ export default {
         });
     },
     archetype(archetypeCard){
-        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=1000&archetype=archetypeCard')
+        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=1000&offset=0&archetype')
         .then( (response) => {
             // handle success
             // console.log(response.data.data);
