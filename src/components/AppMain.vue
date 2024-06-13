@@ -31,8 +31,8 @@ export default {
             // always executed
         });
     },
-    archetype(){
-        console.log('CLICKED')
+    archetype(archetypeCard){
+        console.log(archetypeCard.length)
     }
   },
   created(){
