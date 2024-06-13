@@ -30,6 +30,9 @@ export default {
         .finally(function () {
             // always executed
         });
+    },
+    archetype(){
+        console.log('CLICKED')
     }
   },
   created(){
@@ -39,7 +42,7 @@ export default {
 </script>
 
 <template>
-        <MainSearch />
+        <MainSearch @clickType="archetype" />
         <MainCardsList :cards="cards"/>
 </template>
 
